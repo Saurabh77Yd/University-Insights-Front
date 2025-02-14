@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study MBBS Abroad</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar  -->
+    <nav class="bg-blue-900 text-white p-4 shadow-lg">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <a href="#" class="text-xl font-bold">Study MBBS Abroad</a>
+            <button id="menuToggle" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+            <ul id="navMenu" class="hidden md:flex space-x-6">
+                <li><a href="#" class="hover:text-gray-300">Home</a></li>
+                <li><a href="#leadForm" class="hover:text-gray-300">Apply Now</a></li>
+                <li><a href="#topCountries" class="hover:text-gray-300">Top Countries</a></li>
+            </ul>
+        </div>
+        <ul id="mobileMenu" class="hidden flex-col bg-blue-900 text-white text-center md:hidden">
+            <li><a href="#" class="block py-2">Home</a></li>
+            <li><a href="#leadForm" class="block py-2">Apply Now</a></li>
+            <li><a href="#topCountries" class="block py-2">Top Countries</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Hero Section -->
+    <header class="bg-blue-600 text-white text-center py-10">
+        <h1 class="text-3xl font-bold">Apply Now for MBBS Abroad</h1>
+        <p class="mt-2">Start your journey to becoming a doctor today!</p>
+        <button id="getStartedBtn" class="mt-4 bg-white text-blue-600 px-6 py-2 rounded-lg font-semibold">Get Started</button>
+    </header>
+
+    <!-- Why Study MBBS Abroad -->
+    <section class="p-6 text-center">
+        <h2 class="text-2xl font-semibold">Why Study MBBS Abroad?</h2>
+        <p class="mt-4">Affordable tuition, global recognition, and high-quality education.</p>
+    </section>
+
+    <!-- Top Countries -->
+    <section class="p-6">
+        <h2 class="text-2xl font-semibold text-center">Top Countries</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4 text-center">
+            <span class="bg-white p-4 rounded-lg shadow transition duration-300 transform hover:scale-105 hover:bg-blue-500 hover:text-white">Russia</span>
+            <span class="bg-white p-4 rounded-lg shadow transition duration-300 transform hover:scale-105 hover:bg-blue-500 hover:text-white">Uzbekistan</span>
+            <span class="bg-white p-4 rounded-lg shadow transition duration-300 transform hover:scale-105 hover:bg-blue-500 hover:text-white">Kazakhstan</span>
+            <span class="bg-white p-4 rounded-lg shadow transition duration-300 transform hover:scale-105 hover:bg-blue-500 hover:text-white">Philippines</span>
+            <span class="bg-white p-4 rounded-lg shadow transition duration-300 transform hover:scale-105 hover:bg-blue-500 hover:text-white">Georgia</span>
+            <span class="bg-white p-4 rounded-lg shadow transition duration-300 transform hover:scale-105 hover:bg-blue-500 hover:text-white">Kyrgyzstan</span>
+            <span class="bg-white p-4 rounded-lg shadow transition duration-300 transform hover:scale-105 hover:bg-blue-500 hover:text-white">Egypt</span>
+        </div>
+    </section>
+    
+
+    <!-- Admission Process & Eligibility -->
+    <section class="p-6 text-center">
+        <h2 class="text-2xl font-semibold">Admission Process & Eligibility</h2>
+        <p class="mt-4">Simple steps to secure your admission.</p>
+    </section>
+
+    <!-- Lead Form -->
+    <section class="p-6 bg-white shadow-md max-w-lg mx-auto mt-6 rounded-lg">
+        <h2 class="text-2xl font-semibold text-center">Get in Touch</h2>
+        <form id="leadForm" class="mt-4">
+            <input type="text" id="name" placeholder="Your Name" class="w-full p-2 border rounded mb-2" required>
+            <input type="email" id="email" placeholder="Your Email" class="w-full p-2 border rounded mb-2" required>
+            <input type="tel" id="phone" placeholder="Your Phone" class="w-full p-2 border rounded mb-2" required pattern="[0-9]{10}">
+            <select id="country" class="w-full p-2 border rounded mb-2" required>
+                <option value="">Select Country</option>
+                <option>Russia</option>
+                <option>Uzbekistan</option>
+                <option>Kazakhstan</option>
+                <option>Philippines</option>
+                <option>Georgia</option>
+                <option>Kyrgyzstan</option>
+                <option>Egypt</option>
+            </select>
+            <button type="submit" class="w-full bg-blue-600 text-white p-2 rounded">Submit</button>
+        </form>
+    </section>
+    
+    <section class="p-6 max-w-3xl mx-auto mt-6">
+        <h2 class="text-2xl font-semibold text-center">Submitted Details</h2>
+        <div class="overflow-x-auto"> 
+            <table id="submissionTable" class="w-full mt-4 border-collapse border border-gray-300 text-left min-w-max">
+                <thead>
+                    <tr class="bg-gray-200">
+                        <th class="border p-2">Name</th>
+                        <th class="border p-2">Email</th>
+                        <th class="border p-2">Phone</th>
+                        <th class="border p-2">Country</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   
+                </tbody>
+            </table>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
